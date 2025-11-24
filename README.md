@@ -4,11 +4,11 @@ For this assignment, you will create a card game framework. The framework consis
 
 Your assignment will be to implement these classes according to the requirements. There will be 3 options that you can choose to code the assignment.</br>
 
-**Option 1** (Up to 80%)</br>
+## **Option 1** (Up to 80%)</br>
 
 Create the basic Card and Deck classes according to these specifications:</br>
 
-## The Card class
+### The Card class
 
 The card class must take in three values as parameters: _name_, _suit_ and _value_</br>
 _name_ will be the name of the card (for playing cards for example Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King)</br>
@@ -19,7 +19,7 @@ It Should also have getters for its name, value, and suit (no setters)</br>
 A toString() method that will return its full form, e.g. "Queen of Diamonds" if the _name_ is "Queen" and the _suit_ is "Diamonds"</br>
 An equals() method which checks if the two cards have the same name, suit and value.</br>
 
-## The Deck class
+### The Deck class
 
 Contains a deck of cards.</br>
 It should have two constructors:</br>
@@ -36,20 +36,16 @@ A shuffle() method that rearranges the order of the cards in the deck, use Googl
 
 Here are some helpful hints to help you along the way:</br>
 
-Remember to be consistent with which end of the deck is the "top".</br>
-Make sure your shuffle method provides good randomization.</br>
-Check for edge cases like empty decks or null cards.</br>
 
-**Option 2** (Up to 90%)</br>
-
-Create the same classes as above, plus the DiscardPile class, and add the following requirements to the Deck class.</br>
-
-### Additional Deck methods:
 An addCard(Card card) method that adds the provided card into the deck. Should not add the card if it is null.</br>
 A reshuffle(Card[] cards) method that adds all of the cards in the provided card array into the deck. Shuffle the deck after adding them.</br>
 
+Remember to be consistent with which end of the deck is the "top".</br>
+Make sure your shuffle method provides good randomization.</br>
 
-## The DiscardPile class
+## **Option 2** (Up to 90%)</br>
+
+### The DiscardPile class
 
 Contains a discard pile of cards.</br>
 It should have two constructors:</br>
@@ -64,11 +60,10 @@ A removeCard(Card card) method which removes the specified card from the discard
 A removeAll() method that returns an array of cards and removes them all from your discard pile. If there are no cards in the discard pile return an empty Card array.</br>
 A toString() method that returns all of the cards in the format "Ace of hearts, King of Hearts, Queen of Hearts, Jack of Hearts, 9 of Spades."</br>
 
-**Option 3** (Up to 100%)</br>
 
 Create the same classes as above, plus the Player class.</br>
 
-## The Player class
+### The Player class
 
 Should have two constructors:</br>
 The first Constructor should take a _name_ and _age_ and an array of cards which should be assigned to the hand.</br>
@@ -85,9 +80,13 @@ Return true if the card exists in the hand. False otherwise.</br>
 A returnCard(Card card, Deck deck) method that returns the specified card to the deck. Return true if the card exists in the hand. False otherwise.</br>
 A toString() method that will print out their name, age, and hand of cards (e.g. "Mr. Kalisz, 99, Ace of hearts, King of Hearts, Queen of Hearts, Jack of Hearts, 9 of Spades.")</br>
 
+## **Option 3** (Up to 100%)</br>
 
+Throwing Errors.  For Option 3, your code must throw appropriate errors when the methods/constructors are used incorrectly.  This includes empty strings for names, null values or negative values where applicable.(There may be more than this).  Use your judgement from this section.</br>
 
-## If you're done early: Simple Card Game Implementation
+Also you must use your classes to create a simple card game.
+
+### Simple Card Game Implementation
 
 Create a simple "High Card" game that:
 1. Creates a deck and shuffles it
@@ -99,4 +98,4 @@ Create a simple "High Card" game that:
 
 ---
 
-There are no test cases for the Problem Set. You must test your own code and do so thoroughly. Think of all values that could break your code. Use output statements or create test cases to check values and make sure to test all extremes! Do not forget to comment and create javadocs for your code! Any AI use or copying of other people's code will be considered plagiarism and receive an automatic 0. This is a chance to apply what you ahve learned in this course. Good luck!
+There are no test cases for the Problem Set. You must test your own code and do so thoroughly. Think of all values that could break your code. Use output statements or create test cases to check values and make sure to test all extremes! **Do not forget to comment and create javadocs for your code!** Any AI use or copying of other people's code will be considered plagiarism and receive an automatic 0. This is a chance to apply what you have learned in this course. Commit and Sync your code often so you have older versions to potentially go back to. Good luck!
