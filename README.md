@@ -1,6 +1,9 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=21833095)
 # Card Game Framework - Creating a Game System
 
+
+[![Update logs](https://cdn.us1.chensao.cc/img/810937.png)](https://github.com/KaliszICS/problem-set-unit-4-shaoyang-chen-ics4u1-01-25/blob/master/UpdateLogs.md)
+
 For this assignment, you will create a card game framework. The framework consists of four main classes: Card, Deck, DiscardPile, and Player. These classes will work together to provide the foundation for various card games.</br>
 
 Your assignment will be to implement these classes according to the requirements. There will be 3 options that you can choose to code the assignment.</br>
