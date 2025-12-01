@@ -2,6 +2,10 @@ import java.util.*;
 
 /**
  * The class that represents a player in the card game
+ *
+ *  @author Shaoyang Chen
+ *  @version 114.514
+ *  @since 1919.8.10
  */
 public class Player {
     private String name;
@@ -83,6 +87,9 @@ public class Player {
     private void validatePlayerParameters(String name, int age, Card[] hand) {
         if (name == null || name.trim().isEmpty()) {
             throw new IllegalArgumentException("Player name cannot be null or empty");
+        }
+        if (age < 0) {
+            throw new IllegalArgumentException("Player age cannot be negative");
         }
         if (hand == null) {
             throw new IllegalArgumentException("Hand array cannot be null");
