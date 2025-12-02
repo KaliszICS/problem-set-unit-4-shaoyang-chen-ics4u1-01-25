@@ -632,17 +632,17 @@ public class ProblemSetTest {
         }
 
         @Test
-        @DisplayName("dealCards method deals cards correctly")
-        public void testSelfPlayedGameDealCards() {
+        @DisplayName("drawCards method deals cards correctly")
+        public void testSelfPlayedGameDrawCards() {
             SelfPlayedGame game = new SelfPlayedGame("P1", "P2");
 
             try {
-                Method dealCardsMethod = SelfPlayedGame.class.getDeclaredMethod("dealCards");
+                Method dealCardsMethod = SelfPlayedGame.class.getDeclaredMethod("drawCards");
                 dealCardsMethod.setAccessible(true);
                 dealCardsMethod.invoke(game);
 
             } catch (Exception e) {
-                fail("dealCards method invocation failed: " + e.getMessage());
+                fail("drawCards method invocation failed: " + e.getMessage());
             }
         }
     }
