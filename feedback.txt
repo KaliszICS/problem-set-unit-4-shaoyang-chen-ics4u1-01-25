@@ -1,0 +1,14 @@
+K(30%): 100%
+I(30%): 90%
+C(10%): 100%
+A(30%): 95%
+95.5%
+
+Lots of unnecessary exception checking and try catching.
+If you're the one making the deck and controlling all the code, there should be no reason it crashes since there is no outside influence (new default deck for instance)
+Draw has the same issue.
+No reason to throw an exception for shuffle on an empty deck.  Your shuffle would simply just not run.
+This trend continues in most of your code.  Exception throwing should be minimal as much as possible and let Java do the rest.  You should only be throwing exceptions when it would give unexpected results to your class in functionality.
+Deck should not have a toString method (this should have been commented out).
+Player - if (hand != null) is not necessary since you already validated it before.
+Remember to keep methods private that you are using for just your code (that you don't want others to use)
